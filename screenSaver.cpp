@@ -22,7 +22,7 @@ int main() {
     Texture texture; // ball's texture
     Sprite ball;
     srand(static_cast<unsigned int>(time(0)));
-    if (!texture.loadFromFile("src/ball.png")) {
+    if (!texture.loadFromFile("/home/projects/cpp/screen_saver/src/ball.png")) {
         cout << "Failed while loading photo" << endl;
         return EXIT_FAILURE;
     }
@@ -40,7 +40,7 @@ int main() {
     RectangleShape topWall(Vector2f(monitorWidth, 30));
     Font font;
     Text text;
-    if (!font.loadFromFile("src/font.ttf")) {
+    if (!font.loadFromFile("/home/projects/cpp/screen_saver/src/font.ttf")) {
         cout << "Failed while loading font" << endl;
         return EXIT_FAILURE;
     }
